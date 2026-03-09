@@ -14,7 +14,7 @@ import logging
 # =========================
 
 EMAIL_SENDER = "@gmail.com"
-EMAIL_PASSWORD = "..."   # 🔴 Put NEW app password (no spaces)
+EMAIL_PASSWORD = "..."   # Put NEW app password (no spaces)
 EMAIL_RECEIVER = "@gmail.com"
 
 VIOLATION_FOLDER = "violations"
