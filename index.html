@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Industrial Safety Dashboard</title>
+    <style>
+        body {font-family: Arial; background:#f4f6f9; text-align:center;}
+        h2 {color:#222;}
+        table {margin:auto; border-collapse:collapse; width:80%; background:white;}
+        th,td {border:1px solid #ccc; padding:10px;}
+        th {background:#111; color:white;}
+        .safe {background:#b6ffb6;}
+        .helmet {background:#ffe4b6;}
+        .fire {background:#ffb6b6;}
+    </style>
+</head>
+<body>
+
+<h2> AI Industrial Safety Monitoring Dashboard</h2>
+
+<table>
+<tr>
+    <th>ID</th>
+    <th>Date & Time</th>
+    <th>Workers</th>
+    <th>Helmets</th>
+    <th>Fire</th>
+    <th>Status</th>
+</tr>
+
+{% for row in logs %}
+<tr class="
+    {% if row[5]=='SAFE' %}safe
+    {% elif row[5]=='HELMET VIOLATION' %}helmet
+    {% else %}fire{% endif %}">
+    <td>{{ row[0] }}</td>
+    <td>{{ row[1] }}</td>
+    <td>{{ row[2] }}</td>
+    <td>{{ row[3] }}</td>
+    <td>{{ row[4] }}</td>
+    <td>{{ row[5] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
