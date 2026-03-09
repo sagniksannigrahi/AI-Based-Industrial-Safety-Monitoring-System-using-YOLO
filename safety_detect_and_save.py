@@ -13,9 +13,9 @@ import logging
 # CONFIGURATION
 # =========================
 
-EMAIL_SENDER = "srmextrause@gmail.com"
-EMAIL_PASSWORD = "qojo weld zuho vetr"   # 🔴 Put NEW app password (no spaces)
-EMAIL_RECEIVER = "sagniksannigrahi@gmail.com"
+EMAIL_SENDER = "@gmail.com"
+EMAIL_PASSWORD = "..."   # 🔴 Put NEW app password (no spaces)
+EMAIL_RECEIVER = "@gmail.com"
 
 VIOLATION_FOLDER = "violations"
 LOG_FOLDER = "logs"
